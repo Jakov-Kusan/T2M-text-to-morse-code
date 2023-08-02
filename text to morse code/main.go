@@ -45,9 +45,8 @@ func main(){
 	fmt.Printf("Word: ")
 	fmt.Scan(&word)
 
-	for index,val := range word{
+	for _,val := range word{
 		morse_word = append(morse_word,text_to_morse[string(val)]+" ")
-		fmt.Println(index)
 	}
 
 	for i:=0;i<len(morse_word);i++{
